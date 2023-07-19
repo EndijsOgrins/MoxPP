@@ -17,8 +17,24 @@ class MoxPPRecipe(ConanFile):
 
 
     def configure(self):
-	    # This only works on windows (we added this so that you can see
-        # how to change settings of packages)
-	    # self.options["spdlog"].wchar_support = True
-        pass
+    # This only works on windows (we added this so that you can see
+    # how to change settings of packages)
+    # self.options["spdlog"].wchar_support = True
+
+    # Spdlog allow wchar + shared
+    self.options["spdlog"].wchar_support = True
+    self.options["spdlog"].shared = True
+
+    # FMT
+    # Make shared
+    self.options["fmt"].shared = True
+
+    # PUGI
+    # Make shared
+    self.options["pugixml"].shared = True
+
+    # GTest
+    # No generate main
+    self.options["gtest"].no_main = True
+    #pass
 
