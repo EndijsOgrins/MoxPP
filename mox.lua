@@ -4,7 +4,7 @@
 -- PRODUCT NAME
 -- This the name used for the product provided by this repo
 -- (On windows used as the solution name)
-cmox_product_name = "MoxPP"
+cmox_product_name = "CustomWork"
 
 -- CONFIGURATIONS
 -- The first array _n are the configuration names
