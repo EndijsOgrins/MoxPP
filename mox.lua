@@ -4,7 +4,7 @@
 -- PRODUCT NAME
 -- This the name used for the product provided by this repo
 -- (On windows used as the solution name)
-cmox_product_name = "CustomWork"
+cmox_product_name = "STKDecoderProject"
 
 -- CONFIGURATIONS
 -- The first array _n are the configuration names
@@ -42,7 +42,7 @@ cmox_project_architecture = "single"
 
 -- MACRO PREFIX
 -- This will be prepended to ALL non default macros
-cmox_macro_prefix = ""
+cmox_macro_prefix = "ATK_"
 
 -- === Custom callback functions ===
 -- This is the way to go when implementing custom features

@@ -6,7 +6,7 @@ class MoxPPRecipe(ConanFile):
 
     def requirements(self):
         # Unit test
-        self.requires("gtest/cci.20210126")
+        # self.requires("gtest/cci.20210126")
 
         # Logging
         self.requires("spdlog/1.11.0")
@@ -22,19 +22,19 @@ class MoxPPRecipe(ConanFile):
     # self.options["spdlog"].wchar_support = True
 
     # Spdlog allow wchar + shared
-    self.options["spdlog"].wchar_support = True
-    self.options["spdlog"].shared = True
+        self.options["spdlog"].wchar_support = True
+        self.options["spdlog"].shared = True
 
     # FMT
     # Make shared
-    self.options["fmt"].shared = True
+        self.options["fmt"].shared = True
 
     # PUGI
     # Make shared
-    self.options["pugixml"].shared = True
+        self.options["pugixml"].shared = True
 
     # GTest
     # No generate main
-    self.options["gtest"].no_main = True
+        # self.options["gtest"].no_main = True
     #pass
 
