@@ -12,8 +12,8 @@ class MoxPPRecipe(ConanFile):
         self.requires("spdlog/1.11.0")
 
         # Project files
-        self.requires("pugixml/1.13")
-        self.requires("nlohmann_json/3.11.2")
+        #self.requires("pugixml/1.13")
+        #self.requires("nlohmann_json/3.11.2")
 
 
     def configure(self):
@@ -22,19 +22,19 @@ class MoxPPRecipe(ConanFile):
     # self.options["spdlog"].wchar_support = True
 
     # Spdlog allow wchar + shared
-        self.options["spdlog"].wchar_support = True
-        self.options["spdlog"].shared = True
+        #self.options["spdlog"].wchar_support = True
+        #self.options["spdlog"].shared = True
 
     # FMT
     # Make shared
-        self.options["fmt"].shared = True
+        #self.options["fmt"].shared = True
 
     # PUGI
     # Make shared
-        self.options["pugixml"].shared = True
+        #self.options["pugixml"].shared = True
 
     # GTest
     # No generate main
         # self.options["gtest"].no_main = True
-    #pass
+        pass
 

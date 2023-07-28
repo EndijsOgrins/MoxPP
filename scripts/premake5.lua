@@ -29,6 +29,9 @@ workspace(cmox_product_name)
     configurations(cmox_configurations_n)
     architecture "x64"
     location "../"
+    buildoptions { "/w44365" } -- C/C++ Command Line Additional Options
+    warnings "Extra" -- C/C++ General Warning level
+    externalwarnings "Default" -- C/C++ External Includes Warning level
 
     -- Custom workspace configuration
     if cmox_function_setupworkspace~=nil then
